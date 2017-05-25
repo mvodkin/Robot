@@ -6,10 +6,10 @@
 * Clone this repo.
 * Navigate to the robot directory and run the `script.rb`, passing commands as arguments from the console:
    ```sh
-  $ ruby script.rb MOVE PLACE 1,1,NORTH MOVE LEFT MOVE REPORT
+  $ ruby script.rb PLACE 0,0,NORTH MOVE REPORT
    ```
 
-  This will print `0,2,WEST` to the console.
+  This will print `0,1,NORTH` to the console.
 
 
 <h3>Testing</h3>
