@@ -1,5 +1,6 @@
 require "rspec"
 require "robot"
+require_relative "../script"
 
 describe "Robot" do
   subject(:robot) do
@@ -7,7 +8,7 @@ describe "Robot" do
   end
 
   describe "#place" do
-    it "Places the robot at the correct position" do
+    it "Places the robot at the correct position and direction" do
       robot.place(2, 2, "NORTH")
       expect(robot.position).to eq([2, 2])
       expect(robot.direction).to eq("NORTH")
